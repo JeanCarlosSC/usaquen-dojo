@@ -1,0 +1,22 @@
+{
+  "name": "usaquen-dojo",
+  "version": "1.0.0",
+  "description": "Sitio web de Usaquén dojo ubicado en Bogotá D.C.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "aikido",
+    "dojo",
+    "Bogotá",
+    "D.C",
+    "Colombia",
+    "Usaquén"
+  ],
+  "author": "JeanCarlosSC",
+  "license": "ISC",
+  "devDependencies": {
+    "sass": "^1.63.2"
+  }
+}
