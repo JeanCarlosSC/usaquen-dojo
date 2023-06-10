@@ -1,7 +1,3 @@
-// Green gradient background / abstract blurry fresh green background
-$DARK_GREEN: #2E5902;
-$DARK_GREEN_2: #3B7302;
-$DARK_GREEN_3: #72A603;
-$GREEN: #84BF04;
-$LIGHT_GREEN: #ABD904;
-
+@use 'lib';
+@use 'base';
+@use 'layout';

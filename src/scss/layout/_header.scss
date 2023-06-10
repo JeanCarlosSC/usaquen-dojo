@@ -1,0 +1,17 @@
+@use 'lib/srad' as srad;
+
+.header {
+    background-color: srad.$GREEN_TATAMI;
+
+    h1, a {
+        color: white;
+    }
+
+    a {
+        font-size: 2.4rem;
+
+        &:hover {
+            color: srad.$YELLOW_TATAMI;
+        }
+    }
+}
