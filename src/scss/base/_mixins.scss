@@ -1,0 +1,7 @@
+@use 'lib/srad' as srad;
+
+@mixin phone {
+    @media (min-width: 480px) {
+        
+    }
+}
