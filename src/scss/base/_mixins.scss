@@ -1,7 +1,19 @@
 @use 'lib/srad' as srad;
 
-@mixin phone {
+@mixin mobile {
     @media (min-width: 480px) {
-        
+        @content;
+    }
+}
+
+@mixin tablet {
+    @media (min-width: 768px) {
+        @content;
+    }
+}
+
+@mixin desktop {
+    @media (min-width: 992px) {
+        @content;
     }
 }

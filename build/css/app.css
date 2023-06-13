@@ -356,14 +356,38 @@ h3 {
 }
 
 .header {
-  background-color: #0DA068;
-}
-.header h1, .header a {
-  color: white;
+  background-color: black;
 }
 .header a {
-  font-size: 2.4rem;
+  color: white;
+  font-size: 2rem;
+  display: block;
+  text-align: center;
+  margin-top: 1rem;
 }
 .header a:hover {
   color: #F2E226;
+}
+
+@media (min-width: 768px) {
+  .contenido-header {
+    display: flex;
+  }
+}
+
+.left-side {
+  display: flex;
+  justify-content: center;
+}
+.left-side img {
+  width: 9rem;
+  height: 9rem;
+}
+.left-side h1 {
+  color: white;
+  text-align: center;
+  margin: auto 1rem;
+  font-family: "Urbanist", sans-serif;
+  text-transform: uppercase;
+  font-size: 2.8rem;
 }
