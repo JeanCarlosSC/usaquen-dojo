@@ -360,10 +360,15 @@ h3 {
 }
 .header a {
   color: white;
-  font-size: 2rem;
+  font-size: 1.9rem;
   display: block;
   text-align: center;
   margin-top: 1rem;
+}
+@media (min-width: 768px) {
+  .header a {
+    margin: 0;
+  }
 }
 .header a:hover {
   color: #F2E226;
@@ -372,6 +377,7 @@ h3 {
 @media (min-width: 768px) {
   .contenido-header {
     display: flex;
+    justify-content: space-between;
   }
 }
 
@@ -382,12 +388,21 @@ h3 {
 .left-side img {
   width: 9rem;
   height: 9rem;
+  padding: 1rem;
 }
 .left-side h1 {
   color: white;
   text-align: center;
-  margin: auto 1rem;
+  margin: auto 0;
   font-family: "Urbanist", sans-serif;
   text-transform: uppercase;
   font-size: 2.8rem;
+}
+
+@media (min-width: 768px) {
+  .navegacion-principal {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+  }
 }

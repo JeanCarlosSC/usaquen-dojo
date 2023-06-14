@@ -6,11 +6,14 @@
 
     a {
         color: white;
-        font-size: 2rem;
+        font-size: 1.9rem;
         display: block;
         text-align: center;
         margin-top: 1rem;
 
+        @include m.tablet {
+            margin: 0;
+        }
         &:hover {
             color: srad.$YELLOW_TATAMI;
         }
@@ -20,6 +23,7 @@
 .contenido-header {
     @include m.tablet {
         display: flex;
+        justify-content: space-between;
     }
 }
 .left-side {
@@ -29,11 +33,12 @@
     img {
         width: 9rem;
         height: 9rem;
+        padding: 1rem;
     }
     h1 {
         color: white;
         text-align: center;
-        margin: auto 1rem;
+        margin: auto 0;
         font-family: srad.$URBANIST;
         text-transform: uppercase;
         font-size: 2.8rem;
@@ -42,7 +47,9 @@
 }
 
 .navegacion-principal {
-    @include m.mobile {
-
+    @include m.tablet {
+        display: flex;
+        gap: 2rem;
+        align-items: center;
     }
 }
