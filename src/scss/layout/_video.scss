@@ -1,0 +1,61 @@
+@use '../lib/srad';
+@use '../base/mixins' as m;
+
+.video {
+    position: relative;
+    min-height: 30rem;
+    max-height: 35rem;
+    overflow: hidden;
+
+    @include m.tablet {
+        max-height: 40rem;
+    }
+
+    .overlay {
+        z-index: 1;
+        position: absolute;
+        background: rgb(13,160,104);
+        background: linear-gradient(90deg, rgba(13,160,104,0.4) 0%, rgba(0,171,54,0.3) 25%, rgba(242,226,38,0.4) 100%);
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    video {
+        position: relative;
+        z-index: 0;
+        min-width: 50%;
+        top: -20rem;
+        left: -40rem;
+
+        @include m.tablet {
+            top: -1rem;
+            width: 100%;
+            left: 0;
+        }
+        @include m.desktop {
+            top: -10rem;
+        }
+        @include m.desktopXL {
+            top: -20rem;
+        }
+    }
+}
+
+.contenido-video {
+    z-index: 2;
+    h2 {
+        color: white;
+        font-size: 5rem;
+        font-weight: 400;
+        margin: 0;
+    }
+    p {
+        background-color: srad.$GREEN_TATAMI;
+        display: inline-block;
+        color: white;
+        padding: .8rem 1.8rem;
+    }
+}
