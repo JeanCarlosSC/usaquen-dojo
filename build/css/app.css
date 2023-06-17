@@ -326,12 +326,18 @@ body {
 p {
   font-size: 1.8rem;
   color: black;
+  line-height: 1.5;
 }
 
 .contenedor {
-  width: 95%;
+  width: 90%;
   max-width: 120rem;
   margin: 0 auto;
+}
+@media (min-width: 1080px) {
+  .contenedor {
+    width: 70%;
+  }
 }
 
 a {
@@ -353,6 +359,11 @@ h2 {
 
 h3 {
   font-size: 3rem;
+}
+
+img {
+  max-width: 100%;
+  display: block;
 }
 
 .header {
@@ -418,6 +429,11 @@ h3 {
     max-height: 40rem;
   }
 }
+@media (min-width: 992px) {
+  .video {
+    max-height: 45rem;
+  }
+}
 .video .overlay {
   z-index: 1;
   position: absolute;
@@ -450,7 +466,7 @@ h3 {
 }
 @media (min-width: 1080px) {
   .video video {
-    top: -20rem;
+    top: -15rem;
   }
 }
 
@@ -468,4 +484,30 @@ h3 {
   display: inline-block;
   color: white;
   padding: 0.8rem 1.8rem;
+}
+
+.about-dojo {
+  padding: 5rem 0;
+}
+@media (min-width: 768px) {
+  .about-dojo {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 5rem;
+  }
+}
+
+.main-about {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 4rem;
+}
+@media (min-width: 768px) {
+  .main-about {
+    margin-top: 0;
+  }
+}
+.main-about h2 {
+  margin-bottom: 3rem;
 }

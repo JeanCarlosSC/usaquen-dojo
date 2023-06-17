@@ -1,0 +1,21 @@
+@use '../base/mixins' as m;
+
+.about-dojo {
+    padding: 5rem 0;
+
+    @include m.tablet {
+        @include m.grid(2, 5rem);
+    }
+}
+.main-about {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 4rem;
+    @include m.tablet {
+        margin-top: 0;
+    }
+    h2 {
+        margin-bottom: 3rem;
+    }
+}

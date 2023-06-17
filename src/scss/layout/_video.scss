@@ -11,6 +11,10 @@
         max-height: 40rem;
     }
 
+    @include m.desktop{
+        max-height: 45rem;
+    }
+
     .overlay {
         z-index: 1;
         position: absolute;
@@ -39,7 +43,7 @@
             top: -10rem;
         }
         @include m.desktopXL {
-            top: -20rem;
+            top: -15rem;
         }
     }
 }
